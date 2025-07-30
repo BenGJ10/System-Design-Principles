@@ -7,6 +7,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 - [1. Introduction](1.%20Introduction/)
   - [What is System Design?](1.%20Introduction/1.%20What%20is%20System%20Design.md)
   - [Monolithic and Microservices Systems](1.%20Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
+  - [Horizontal and Vertical Scaling](1.%20Introduction/3.%20Scalability.md)
 
 ## Structure
 
