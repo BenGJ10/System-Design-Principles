@@ -4,10 +4,15 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 
 ## Contents
 
-- [1. Introduction](1.%20Introduction/)
-  - [What is System Design?](1.%20Introduction/1.%20What%20is%20System%20Design.md)
-  - [Monolithic and Microservices Systems](1.%20Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
-  - [Horizontal and Vertical Scaling](1.%20Introduction/3.%20Scalability.md)
+- [1. Introduction to High Level Design](1.%20Introduction/)
+  - [What is System Design?](Introduction/1.%20What%20is%20System%20Design.md)
+  - [Monolithic and Microservices Systems](Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
+  - [Horizontal and Vertical Scaling](Introduction/3.%20Scalability.md)
+  - [Availabilty](Introduction/4.%20Availability.md)
+  - [Reliability](Introduction/5.%20Reliability.md)
+  - [Consistency](Introduction/6.%20Consistency.md)
+  - [CAP Theorem](Introduction/7.%20CAP%20Theorem.md)
+  - [Concurrency and Parallelism](Introduction/8.%20Concurrency%20and%20Parallelism.md)
 
 ## Structure
 
