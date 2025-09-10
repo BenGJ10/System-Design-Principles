@@ -4,7 +4,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 
 ## Contents
 
-- [1. Introduction to High Level Design](1.%20Introduction/)
+- [1. Introduction to High Level Design](Introduction/)
   - [What is System Design?](Introduction/1.%20What%20is%20System%20Design.md)
   - [Monolithic and Microservices Systems](Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
   - [Horizontal and Vertical Scaling](Introduction/3.%20Scalability.md)
@@ -13,6 +13,12 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Consistency](Introduction/6.%20Consistency.md)
   - [CAP Theorem](Introduction/7.%20CAP%20Theorem.md)
   - [Concurrency and Parallelism](Introduction/8.%20Concurrency%20and%20Parallelism.md)
+
+- [2. Networking in System Design](Networking/)
+  - [Networking Basics](Networking/1.%20Networking%20Basics.md)
+  - [TCP - IP Model](Networking/2.%20TCP-IP%20Model.md)
+  - [Domain Name System (DNS)](Networking/3.%20Domain%20Name%20System.md)
+---
 
 ## Structure
 
