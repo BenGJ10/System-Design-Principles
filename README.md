@@ -13,11 +13,13 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Consistency](Introduction/6.%20Consistency.md)
   - [CAP Theorem](Introduction/7.%20CAP%20Theorem.md)
   - [Concurrency and Parallelism](Introduction/8.%20Concurrency%20and%20Parallelism.md)
+  - [Latency and Throughput](Introduction/9.%20Latency%20vs%20Throughput.md)
 
 - [2. Networking in System Design](Networking/)
   - [Networking Basics](Networking/1.%20Networking%20Basics.md)
   - [TCP - IP Model](Networking/2.%20TCP-IP%20Model.md)
   - [Domain Name System (DNS)](Networking/3.%20Domain%20Name%20System.md)
+  - [Content Delivery Network (CDN)](Networking/4.%20Content%20Delivery%20Network.md)
 ---
 
 ## Structure
