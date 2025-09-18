@@ -20,6 +20,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [TCP - IP Model](Networking/2.%20TCP-IP%20Model.md)
   - [Domain Name System (DNS)](Networking/3.%20Domain%20Name%20System.md)
   - [Content Delivery Network (CDN)](Networking/4.%20Content%20Delivery%20Network.md)
+  - [API Communication](Networking/5.%20API%20Communication.md)
 ---
 
 ## Structure
