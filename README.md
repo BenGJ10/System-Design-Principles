@@ -25,6 +25,9 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 
 - [3. Load Balancing](Load%20Balancing/)
   - [Load Balancing Basics](Load%20Balancing/Load%20Balancing.md)
+  - [Types of Load Balancing](Load%20Balancing/Types%20of%20Load%20Balancing.md)
+  - [Load Balancing Algorithms](Load%20Balancing/Load%20Balancing%20Algorithms.md)
+  
 ---
 
 ## Structure

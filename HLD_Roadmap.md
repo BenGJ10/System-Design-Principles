@@ -1,181 +1,286 @@
-# System Design Roadmap (HLD Preparation)
+# High Level System Design (HLD) Roadmap
 
-This roadmap covers everything you need to study for **System Design Interviews (High-Level Design)**, organized in a structured order.
+This roadmap takes you **from foundations → distributed systems → real-world architectures**, in a progressive, interview-focused way.
 
 ---
 
 ## 1. Foundations of System Design
-- **What is System Design?**
-- Functional vs. Non-Functional Requirements
-- Latency vs. Throughput
-- Horizontal vs. Vertical Scaling
-- **Availability, Reliability, Fault Tolerance**
-- **Consistency**
-- **Maintainability**
-- **CAP Theorem**
-- **Concurrency vs. Parallelism**
+
+Build conceptual clarity before diving into systems.
+
+* What is System Design?
+* Functional vs Non-Functional Requirements
+* Horizontal vs Vertical Scaling
+* **Latency vs Throughput**
+* **Availability, Reliability, Fault Tolerance**
+* **Consistency & CAP Theorem**
+* **Concurrency vs Parallelism**
+* **Idempotency & Statelessness** (often asked in interviews)
+* **Data Partitioning Basics**
+
+*Goal:* Understand how system design is about **trade-offs** between these principles.
 
 ---
 
 ## 2. Networking & Communication
-- Basics of HTTP/HTTPS
-- TCP/IP and UDP
-- DNS (Domain Name System)
-- CDN (Content Delivery Networks)
-- API Communication
-  - REST APIs
-  - gRPC
-  - WebSockets
-- Reverse Proxy (Nginx, HAProxy)
+
+Everything begins with how systems talk to each other.
+
+* **Networking Basics**
+* **TCP/IP vs UDP**
+* **HTTP/HTTPS**
+* **DNS (Domain Name System)**
+* **CDN (Content Delivery Networks)**
+* **API Communication**
+
+  * REST
+  * gRPC
+  * GraphQL
+  * WebSockets
+  * SOAP (legacy systems)
+* **Proxy & Reverse Proxy (Nginx, HAProxy)**
+* **Load Balancing (Layer 4 vs Layer 7 + Algorithms)**
+
+*Goal:* You should know **how requests travel from browser → backend → database** and how systems optimize that flow.
 
 ---
 
-## 3. Databases & Storage
-- Relational Databases (SQL)
-- Non-Relational Databases (NoSQL)
-  - Key-Value Stores
-  - Document Stores
-  - Wide Column Stores
-  - Graph Databases
-- Indexing & Query Optimization
-- **Database Scaling**
-  - Replication (Master-Slave, Master-Master)
-  - Sharding & Partitioning
-- **Consistency Models**
-  - Strong Consistency
-  - Eventual Consistency
-  - Causal Consistency
-- Database Caching (Redis, Memcached)
+## 3. Databases & Storage Systems
+
+The backbone of every design.
+
+### **Database Types**
+
+* Relational (SQL) – ACID
+* Non-Relational (NoSQL)
+
+  * Key-Value (Redis, DynamoDB)
+  * Document (MongoDB, CouchDB)
+  * Wide Column (Cassandra)
+  * Graph (Neo4j)
+
+### **Database Scaling**
+
+* Replication (Master-Slave, Master-Master)
+* Sharding & Partitioning
+* Indexing & Query Optimization
+* Denormalization for Performance
+* Read/Write Splitting
+
+### **Consistency Models**
+
+* Strong Consistency
+* Eventual Consistency
+* Causal Consistency
+
+*Goal:* Be able to **choose and justify** which database fits each use case (OLTP vs OLAP, consistency vs latency trade-offs).
 
 ---
 
-## 4. Core Distributed Systems Concepts
-- Distributed Systems Basics
-- Leader Election (Zookeeper, etcd)
-- Consensus Algorithms (Raft, Paxos)
-- Quorum & Voting Mechanisms
-- Eventual Consistency (Amazon Dynamo Model)
-- Vector Clocks & Versioning
+## 4. Caching & Performance Optimization
+
+Caching is one of the most common interview deep-dives.
+
+* **Types of Caching**
+
+  * CDN Caching
+  * Application Caching (Redis, Memcached)
+  * Database Query Caching
+* **Eviction Policies**: LRU, LFU, FIFO
+* **Write Policies**: Write-through, Write-back, Write-around
+* **Cache Invalidation**: The hardest problem in system design
+* **Content Hashing & TTLs**
+
+*Goal:* Understand where to cache (client, CDN, app, DB) and when to **bypass or invalidate** it.
 
 ---
 
-## 5. High Availability & Scalability
-- **Load Balancing**
-  - Layer 4 vs. Layer 7 Load Balancing
-  - Load Balancing Algorithms (Round Robin, Least Connections, IP Hash)
-- Auto Scaling & Elasticity
-- Health Checks & Failover
-- Multi-Region Deployment
-- Redundancy & Removing Single Point of Failure (SPOF)
+## 5. Messaging & Asynchronous Processing
+
+Crucial for scalable, decoupled architectures.
+
+* **Message Queues**
+
+  * RabbitMQ, SQS, Kafka
+* **Pub/Sub Pattern**
+* **Event-Driven Architecture**
+* **Producer-Consumer Model**
+* **Idempotency in Messaging**
+* **Backpressure Handling**
+* **Retry and Dead Letter Queues (DLQ)**
+
+*Goal:* Be able to handle **spikes in workload** and design resilient background systems.
 
 ---
 
-## 6. Performance Optimization
-- **Caching**
-  - CDN Caching
-  - Application Caching (Redis, Memcached)
-  - Cache Eviction Policies (LRU, LFU, FIFO)
-- Rate Limiting & Throttling
-- Connection Pooling
-- Asynchronous Processing
-  - Message Queues (RabbitMQ, SQS)
-  - Publish-Subscribe (Kafka, Pub/Sub)
-- Data Compression
-- Query Optimization
+## 6. High Availability & Scalability
+
+Keeping systems alive under pressure.
+
+* **Load Balancing (L4 vs L7)**
+* **Health Checks & Failover**
+* **Auto Scaling**
+* **Replication and Redundancy**
+* **Multi-Region Deployment**
+* **Disaster Recovery**
+
+  * RTO (Recovery Time Objective)
+  * RPO (Recovery Point Objective)
+
+*Goal:* Build systems that gracefully handle traffic spikes and failures without downtime.
 
 ---
 
-## 7. Architecture Patterns
-- **Monolith vs. Microservices**
-- Service-Oriented Architecture (SOA)
-- Event-Driven Architecture
-- CQRS (Command Query Responsibility Segregation)
-- Saga Pattern (Distributed Transactions)
-- API Gateway Pattern
-- Service Discovery (Consul, Eureka, Zookeeper)
+## 7. Core Distributed Systems Concepts
+
+Deep concepts that power scalable systems.
+
+* Distributed Consensus (Paxos, Raft)
+* Leader Election (Zookeeper, etcd)
+* Quorum Reads/Writes
+* Vector Clocks
+* Gossip Protocol
+* CAP & BASE Theorems (advanced view)
+* Distributed Transactions (2PC, 3PC)
+* Clock Synchronization & Logical Clocks
+
+*Goal:* Understand **how distributed systems coordinate and agree** on data/state under failure.
 
 ---
 
-## 8. Reliability & Fault Handling
-- **Fault Tolerance**
-- Circuit Breaker Pattern
-- Retry Mechanisms
-- Backpressure Handling
-- Graceful Degradation
-- Bulkheads & Isolation
-- Disaster Recovery Strategies (RPO, RTO)
+## 8. Architecture & Design Patterns
+
+Learn reusable structures for real-world systems.
+
+* **Monolithic vs Microservices**
+* **Service-Oriented Architecture (SOA)**
+* **Event-Driven Architecture**
+* **CQRS (Command Query Responsibility Segregation)**
+* **Saga Pattern (Distributed Transactions)**
+* **API Gateway Pattern**
+* **Service Discovery (Consul, Eureka, Zookeeper)**
+* **Sidecar Pattern (used in Kubernetes)**
+
+*Goal:* Know when to use each architecture and trade-offs (simplicity vs flexibility).
 
 ---
 
-## 9. Monitoring, Logging & Maintainability
-- Observability (Logs, Metrics, Traces)
-- Monitoring Tools (Prometheus, Grafana, Datadog, CloudWatch)
-- Logging Systems (ELK Stack, Splunk)
-- Distributed Tracing (Jaeger, Zipkin)
-- CI/CD Pipelines
-- Deployment Strategies
-  - Blue-Green Deployments
-  - Canary Releases
-  - Rolling Updates
-- Rollback Mechanisms
+## 9. Reliability & Fault Handling
+
+Keeping things running even when parts fail.
+
+* **Circuit Breaker Pattern**
+* **Bulkhead Isolation**
+* **Graceful Degradation**
+* **Retry & Timeout Strategies**
+* **Backoff Mechanisms**
+* **Chaos Engineering (Netflix’s Simian Army)**
+
+*Goal:* Design fault-tolerant systems that degrade gracefully rather than crash.
 
 ---
 
-## 10. Security & Compliance
-- Authentication & Authorization
-  - OAuth 2.0
-  - JWT (JSON Web Tokens)
-  - SSO (Single Sign-On)
-- Data Encryption
-  - SSL/TLS
-  - Encryption at Rest vs. In Transit
-- DDoS Mitigation
-- Web Application Firewall (WAF)
-- Secure API Design
-- Compliance Standards (GDPR, HIPAA, PCI-DSS)
+## 10. Observability & Maintainability
+
+Building systems you can monitor, debug, and evolve.
+
+* **Monitoring**
+
+  * Prometheus, Grafana, CloudWatch
+* **Logging**
+
+  * ELK Stack (Elasticsearch, Logstash, Kibana)
+* **Tracing**
+
+  * Jaeger, Zipkin, OpenTelemetry
+* **Metrics**
+
+  * RED & USE Principles
+* **CI/CD Pipelines**
+
+  * Blue-Green, Canary, and Rolling Deployments
+
+*Goal:* Know how to ensure **visibility** and **continuous improvement** in production.
 
 ---
 
-## 11. Advanced Topics
-- Distributed File Systems (HDFS, Ceph)
-- Object Storage (Amazon S3, Google Cloud Storage)
-- Event Streaming (Kafka, Kinesis, Pulsar)
-- Serverless Architectures (AWS Lambda, GCP Cloud Functions)
-- Containerization & Orchestration
-  - Docker
-  - Kubernetes
-- Edge Computing
-- Hybrid & Multi-Cloud Architectures
+## 11. Security & Compliance
+
+Essential for production systems.
+
+* **Authentication vs Authorization**
+
+  * OAuth 2.0, JWT, SSO
+* **Encryption**
+
+  * SSL/TLS, Data at Rest vs In Transit
+* **DDoS Protection**
+* **Web Application Firewall (WAF)**
+* **API Security & Rate Limiting**
+* **Compliance Standards**
+
+  * GDPR, HIPAA, PCI-DSS
+
+*Goal:* Be able to secure your design at every layer.
 
 ---
 
-## 12. Case Studies & System Design Problems
-- **Beginner-Friendly**
-  - URL Shortener (TinyURL)
-  - Pastebin
-  - Rate Limiter
-- **Intermediate**
-  - Chat Application (WhatsApp, Messenger)
-  - News Feed System (Facebook, Twitter)
-  - Distributed Caching System
-- **Advanced**
-  - YouTube / Netflix (Video Streaming)
-  - Uber / Lyft (Ride-Sharing)
-  - Amazon / Flipkart (E-commerce)
-  - Google Drive / Dropbox (File Storage)
-  - Payment Gateway (Stripe, PayPal)
+## 12. Advanced & Cloud Topics
+
+What top-tier systems rely on.
+
+* **Distributed File Systems (HDFS, Ceph)**
+* **Object Storage (S3, GCS)**
+* **Event Streaming (Kafka, Kinesis, Pulsar)**
+* **Serverless Architectures (Lambda, Cloud Functions)**
+* **Containerization (Docker)**
+* **Orchestration (Kubernetes)**
+* **Edge Computing**
+* **Hybrid & Multi-Cloud Designs**
+* **Global System Design** (GeoDNS, Anycast, CDN, Multi-Region DBs)
+
+*Goal:* Design globally available, cloud-ready systems.
 
 ---
 
-## Key Resources
-- **Books**
-  - Designing Data-Intensive Applications – Martin Kleppmann
-  - System Design Interview Vol 1 & 2 – Alex Xu
-- **Websites**
-  - System Design Primer (GitHub)
-  - High Scalability Blog
-- **Practice**
-  - LeetCode System Design
-  - Grokking the System Design Interview (Educative)
+## 13. System Design Case Studies
+
+Now that you know the parts — build the whole.
+
+### Beginner-Level
+
+* URL Shortener (TinyURL)
+* Rate Limiter
+* Pastebin
+
+### Intermediate
+
+* Chat Application (WhatsApp)
+* News Feed System (Twitter)
+* Notification System
+* Distributed Cache
+
+### Advanced
+
+* YouTube / Netflix (Streaming)
+* Uber / Lyft (Ride Sharing)
+* Google Drive / Dropbox (Cloud Storage)
+* Amazon / Flipkart (E-commerce)
+* Stripe / PayPal (Payment System)
+
+*Goal:* Practice **end-to-end thinking** — from requirements → scaling → trade-offs.
+
+---
+
+## 14. Learning Resources
+
+The best materials to master every layer.
+
+| Category               | Recommended                                                                                                |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Books**              | *Designing Data-Intensive Applications* (Martin Kleppmann), *System Design Interview Vol. 1 & 2* (Alex Xu) |
+| **Courses**            | Grokking the System Design Interview (Educative), ByteByteGo videos, Gaurav Sen YouTube                    |
+| **Practice**           | System Design Primer (GitHub), LeetCode Design Questions                                                   |
+| **Tools for Diagrams** | Excalidraw, Draw.io, Whimsical                                                                             |
 
 ---
