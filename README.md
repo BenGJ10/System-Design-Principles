@@ -14,6 +14,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [CAP Theorem](Introduction/7.%20CAP%20Theorem.md)
   - [Concurrency and Parallelism](Introduction/8.%20Concurrency%20and%20Parallelism.md)
   - [Latency and Throughput](Introduction/9.%20Latency%20vs%20Throughput.md)
+  - [Idempotency and Statelessness](Introduction/10.%20Idempotency%20and%20Statelessness.md)
 
 - [2. Networking in System Design](Networking/)
   - [Networking Basics](Networking/1.%20Networking%20Basics.md)
@@ -27,6 +28,10 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Load Balancing Basics](Load%20Balancing/Load%20Balancing.md)
   - [Types of Load Balancing](Load%20Balancing/Types%20of%20Load%20Balancing.md)
   - [Load Balancing Algorithms](Load%20Balancing/Load%20Balancing%20Algorithms.md)
+  - [Load Balancer vs Reverse Proxy](Load%20Balancing/Load%20Balancer%20vs%20Reverse%20Proxy.md)
+
+- [4. Databases and Storage Systems](Databases/)
+  - 
   
 ---
 
