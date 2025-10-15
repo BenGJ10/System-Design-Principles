@@ -31,7 +31,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Load Balancer vs Reverse Proxy](Load%20Balancing/Load%20Balancer%20vs%20Reverse%20Proxy.md)
 
 - [4. Databases and Storage Systems](Databases/)
-  - 
+  - [Types of Databases](Databases/1.%20Database%20Types.md)
   
 ---
 
