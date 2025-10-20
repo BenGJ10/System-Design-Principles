@@ -32,7 +32,9 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 
 - [4. Databases and Storage Systems](Databases/)
   - [Types of Databases](Databases/1.%20Database%20Types.md)
-  
+  - [Database Replication](Databases/2.%20Database%20Replication.md)
+  - [Database Sharding](Databases/3.%20Database%20Sharding.md)
+  - [Database Partitioning](Databases/4.%20Database%20Partitioning.md)  
 ---
 
 ## Structure
