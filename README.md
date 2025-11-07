@@ -36,6 +36,8 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Database Sharding](Databases/3.%20Database%20Sharding.md)
   - [Database Partitioning](Databases/4.%20Database%20Partitioning.md)  
   - [Database Denormalization](Databases/5.%20Database%20Denormalization.md)
+  - [Database Federation](Databases/6.%20Database%20Federation.md)
+  - [Choosing the Right Database](Databases/7.%20Choosing%20the%20Right%20Database.md)
 ---
 
 ## Structure
