@@ -35,6 +35,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Database Replication](Databases/2.%20Database%20Replication.md)
   - [Database Sharding](Databases/3.%20Database%20Sharding.md)
   - [Database Partitioning](Databases/4.%20Database%20Partitioning.md)  
+  - [Database Denormalization](Databases/5.%20Database%20Denormalization.md)
 ---
 
 ## Structure
