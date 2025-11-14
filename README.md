@@ -42,6 +42,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 
 - **[5. Caching](Caching/)**
   - [Introduction to Caching](Caching/1.%20Introduction%20to%20Caching.md)
+  - [Types of Caching](Caching/2.%20Types%20of%20Caching.md)
   
 ## Structure
 
