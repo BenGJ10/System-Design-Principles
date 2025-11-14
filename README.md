@@ -40,6 +40,9 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Choosing the Right Database](Databases/7.%20Choosing%20the%20Right%20Database.md)
 ---
 
+- **[5. Caching](Caching/)**
+  - [Introduction to Caching](Caching/1.%20Introduction%20to%20Caching.md)
+  
 ## Structure
 
 The notes are organized by topic and architecture type, with supporting diagrams for visual reference. Each section provides definitions, objectives, advantages, disadvantages, and practical considerations for system design.
