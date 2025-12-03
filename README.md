@@ -4,45 +4,46 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 
 ## Contents
 
-- **[1. Introduction to High Level Design](Introduction/)**
-  - [What is System Design?](Introduction/1.%20What%20is%20System%20Design.md)
-  - [Monolithic and Microservices Systems](Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
-  - [Horizontal and Vertical Scaling](Introduction/3.%20Scalability.md)
-  - [Availabilty](Introduction/4.%20Availability.md)
-  - [Reliability](Introduction/5.%20Reliability.md)
-  - [Consistency](Introduction/6.%20Consistency.md)
-  - [CAP Theorem](Introduction/7.%20CAP%20Theorem.md)
-  - [Concurrency and Parallelism](Introduction/8.%20Concurrency%20and%20Parallelism.md)
-  - [Latency and Throughput](Introduction/9.%20Latency%20vs%20Throughput.md)
-  - [Idempotency and Statelessness](Introduction/10.%20Idempotency%20and%20Statelessness.md)
+- ### [1. Introduction to High Level Design](Introduction/)
+  - [What is **System Design?**](Introduction/1.%20What%20is%20System%20Design.md)
+  - [**Monolithic** and **Microservices** Systems](Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
+  - [**Horizontal** and **Vertical** Scaling](Introduction/3.%20Scalability.md)
+  - [**Availabilty**](Introduction/4.%20Availability.md)
+  - [**Reliability**](Introduction/5.%20Reliability.md)
+  - [**Consistency**](Introduction/6.%20Consistency.md)
+  - [**CAP** Theorem](Introduction/7.%20CAP%20Theorem.md)
+  - [**Concurrency** and **Parallelism**](Introduction/8.%20Concurrency%20and%20Parallelism.md)
+  - [**Latency** and **Throughput**](Introduction/9.%20Latency%20vs%20Throughput.md)
+  - [**Idempotency** and **Statelessness**](Introduction/10.%20Idempotency%20and%20Statelessness.md)
 
-- **[2. Networking in System Design](Networking/)**
-  - [Networking Basics](Networking/1.%20Networking%20Basics.md)
-  - [TCP - IP Model](Networking/2.%20TCP-IP%20Model.md)
-  - [Domain Name System (DNS)](Networking/3.%20Domain%20Name%20System.md)
-  - [Content Delivery Network (CDN)](Networking/4.%20Content%20Delivery%20Network.md)
-  - [API Communication](Networking/5.%20API%20Communication.md)
-  - [Forward Proxy vs Reverse Proxy](Networking/6.%20Proxy%20and%20Reverse%20Proxy.md) 
+- ### [2. Networking in System Design](Networking/)
+  - [Networking **Basics**](Networking/1.%20Networking%20Basics.md)
+  - [**TCP - IP** Model](Networking/2.%20TCP-IP%20Model.md)
+  - [Domain Name System **(DNS)**](Networking/3.%20Domain%20Name%20System.md)
+  - [Content Delivery Network **(CDN)**](Networking/4.%20Content%20Delivery%20Network.md)
+  - [**API** Communication](Networking/5.%20API%20Communication.md)
+  - [**Forward Proxy** vs **Reverse Proxy**](Networking/6.%20Proxy%20and%20Reverse%20Proxy.md) 
 
-- **[3. Load Balancing](Load%20Balancing/)**
-  - [Load Balancing Basics](Load%20Balancing/Load%20Balancing.md)
-  - [Types of Load Balancing](Load%20Balancing/Types%20of%20Load%20Balancing.md)
-  - [Load Balancing Algorithms](Load%20Balancing/Load%20Balancing%20Algorithms.md)
-  - [Load Balancer vs Reverse Proxy](Load%20Balancing/Load%20Balancer%20vs%20Reverse%20Proxy.md)
+- ### [3. Load Balancing](Load%20Balancing/)
+  - [Load Balancing **Basics**](Load%20Balancing/Load%20Balancing.md)
+  - [**Types** of Load Balancing](Load%20Balancing/Types%20of%20Load%20Balancing.md)
+  - [Load Balancing **Algorithms**](Load%20Balancing/Load%20Balancing%20Algorithms.md)
+  - [**Load Balancer** vs **Reverse Proxy**](Load%20Balancing/Load%20Balancer%20vs%20Reverse%20Proxy.md)
 
-- **[4. Databases and Storage Systems](Databases/)**
-  - [Types of Databases](Databases/1.%20Database%20Types.md)
-  - [Database Replication](Databases/2.%20Database%20Replication.md)
-  - [Database Sharding](Databases/3.%20Database%20Sharding.md)
-  - [Database Partitioning](Databases/4.%20Database%20Partitioning.md)  
-  - [Database Denormalization](Databases/5.%20Database%20Denormalization.md)
-  - [Database Federation](Databases/6.%20Database%20Federation.md)
-  - [Choosing the Right Database](Databases/7.%20Choosing%20the%20Right%20Database.md)
+- ### [4. Databases and Storage Systems](Databases/)
+  - [**Types** of Databases](Databases/1.%20Database%20Types.md)
+  - [Database **Replication**](Databases/2.%20Database%20Replication.md)
+  - [Database **Sharding**](Databases/3.%20Database%20Sharding.md)
+  - [Database **Partitioning**](Databases/4.%20Database%20Partitioning.md)  
+  - [Database **Normalization**](Databases/8.%20Database%20Normalization.md)
+  - [Database **Denormalization**](Databases/5.%20Database%20Denormalization.md)
+  - [Database **Federation**](Databases/6.%20Database%20Federation.md)
+  - [**Choosing the Right** Database](Databases/7.%20Choosing%20the%20Right%20Database.md)
 ---
 
-- **[5. Caching](Caching/)**
-  - [Introduction to Caching](Caching/1.%20Introduction%20to%20Caching.md)
-  - [Types of Caching](Caching/2.%20Types%20of%20Caching.md)
+- ### [5. Caching](Caching/)
+  - [**Introduction** to Caching](Caching/1.%20Introduction%20to%20Caching.md)
+  - [**Types** of Caching](Caching/2.%20Types%20of%20Caching.md)
   
 ## Structure
 
