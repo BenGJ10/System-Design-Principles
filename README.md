@@ -45,6 +45,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [**Introduction** to Caching](Caching/1.%20Introduction%20to%20Caching.md)
   - [**Types** of Caching](Caching/2.%20Types%20of%20Caching.md)
   - [**Cache Eviction** Policies](Caching/3.%20Cache%20Eviction%20Policies.md)
+  - [**Cache Write** Strategies](Caching/4.%20Cache%20Write%20Strategies.md)
   
 ## Structure
 
