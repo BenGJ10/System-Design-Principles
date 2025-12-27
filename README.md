@@ -42,12 +42,11 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 ---
 
 - ### [5. Caching](Caching/)
-  - [**Introduction** to Caching](Caching/1.%20Introduction%20to%20Caching.md)
+  - [**Introduction** to **Caching**](Caching/1.%20Introduction%20to%20Caching.md)
   - [**Types** of Caching](Caching/2.%20Types%20of%20Caching.md)
   - [**Cache Eviction** Policies](Caching/3.%20Cache%20Eviction%20Policies.md)
   - [**Cache Write** Strategies](Caching/4.%20Cache%20Write%20Strategies.md)
-  
-## Structure
+  - [Cache **Invalidation**](Caching/5.%20Cache%20Invalidation.md)
 
 The notes are organized by topic and architecture type, with supporting diagrams for visual reference. Each section provides definitions, objectives, advantages, disadvantages, and practical considerations for system design.
 
