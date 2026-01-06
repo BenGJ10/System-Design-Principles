@@ -22,6 +22,8 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Domain Name System **(DNS)**](Networking/3.%20Domain%20Name%20System.md)
   - [Content Delivery Network **(CDN)**](Networking/4.%20Content%20Delivery%20Network.md)
   - [**API** Communication](Networking/5.%20API%20Communication.md)
+  - [**API Gateway**](Networking/7.%20API%20Gateway.md)
+  - [**RESTful APIs**](Networking/8.%20Restful%20APIs.md)
   - [**Forward Proxy** vs **Reverse Proxy**](Networking/6.%20Proxy%20and%20Reverse%20Proxy.md) 
 
 - ### [3. Load Balancing](Load%20Balancing/)
