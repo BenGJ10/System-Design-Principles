@@ -5,6 +5,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 ## Contents
 
 - ### [1. Introduction to High Level Design](Introduction/)
+ 
   - [What is **System Design?**](Introduction/1.%20What%20is%20System%20Design.md)
   - [**Monolithic** and **Microservices** Systems](Introduction/2.%20Monolithic%20and%20Microservices%20Systems.md)
   - [**Horizontal** and **Vertical** Scaling](Introduction/3.%20Scalability.md)
@@ -16,7 +17,10 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [**Latency** and **Throughput**](Introduction/9.%20Latency%20vs%20Throughput.md)
   - [**Idempotency** and **Statelessness**](Introduction/10.%20Idempotency%20and%20Statelessness.md)
 
+---
+
 - ### [2. Networking in System Design](Networking/)
+ 
   - [Networking **Basics**](Networking/1.%20Networking%20Basics.md)
   - [**TCP - IP** Model](Networking/2.%20TCP-IP%20Model.md)
   - [Domain Name System **(DNS)**](Networking/3.%20Domain%20Name%20System.md)
@@ -27,12 +31,16 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [**Forward Proxy** vs **Reverse Proxy**](Networking/6.%20Proxy%20and%20Reverse%20Proxy.md) 
 
 - ### [3. Load Balancing](Load%20Balancing/)
+  
   - [Load Balancing **Basics**](Load%20Balancing/Load%20Balancing.md)
   - [**Types** of Load Balancing](Load%20Balancing/Types%20of%20Load%20Balancing.md)
   - [Load Balancing **Algorithms**](Load%20Balancing/Load%20Balancing%20Algorithms.md)
   - [**Load Balancer** vs **Reverse Proxy**](Load%20Balancing/Load%20Balancer%20vs%20Reverse%20Proxy.md)
 
+---
+
 - ### [4. Databases and Storage Systems](Databases/)
+  
   - [**Types** of Databases](Databases/1.%20Database%20Types.md)
   - [Database **Replication**](Databases/2.%20Database%20Replication.md)
   - [Database **Sharding**](Databases/3.%20Database%20Sharding.md)
@@ -41,14 +49,23 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [Database **Denormalization**](Databases/5.%20Database%20Denormalization.md)
   - [Database **Federation**](Databases/6.%20Database%20Federation.md)
   - [**Choosing the Right** Database](Databases/7.%20Choosing%20the%20Right%20Database.md)
----
 
 - ### [5. Caching](Caching/)
+  
   - [**Introduction** to **Caching**](Caching/1.%20Introduction%20to%20Caching.md)
   - [**Types** of Caching](Caching/2.%20Types%20of%20Caching.md)
   - [**Cache Eviction** Policies](Caching/3.%20Cache%20Eviction%20Policies.md)
   - [**Cache Write** Strategies](Caching/4.%20Cache%20Write%20Strategies.md)
   - [Cache **Invalidation**](Caching/5.%20Cache%20Invalidation.md)
+
+---
+
+- ### [6. Messaging and Communication](Messaging%20and%20Processing/)
+  
+  - [**Message Queues**](Messaging%20and%20Processing/1.%20Message%20Queues.md)
+  - [**Publish-Subscribe** Model](Messaging%20and%20Processing/2.%20Pub%20Sub%20Model.md)
+  - [**Event-Driven Architecture**](Messaging%20and%20Processing/3.%20Event%20Driven%20Architecture.md)
+---
 
 The notes are organized by topic and architecture type, with supporting diagrams for visual reference. Each section provides definitions, objectives, advantages, disadvantages, and practical considerations for system design.
 
