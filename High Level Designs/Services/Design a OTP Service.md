@@ -59,29 +59,6 @@ This separation makes the system easier to secure and scale.
 
 ---
 
-## OTP Request Flow (Generation)
-
-The OTP request flow is designed to reject invalid or abusive requests as early as possible.
-
-```mermaid
-sequenceDiagram
-    participant Client
-    participant AuthAPI
-    participant RateLimiter
-    participant OTPService
-    participant Redis
-    participant Notification
-
-    Client->>AuthAPI: Request OTP
-    AuthAPI->>RateLimiter: Check limits
-    RateLimiter-->>AuthAPI: Allowed
-    AuthAPI->>OTPService: Generate OTP
-    OTPService->>OTPService: Generate + hash OTP
-    OTPService->>Redis: Store hashed OTP (TTL)
-    OTPService->>Notification: Send OTP
-    Notification-->>Client: OTP delivered
-```
-
 ### Key Design Points
 
 * Rate limiting happens **before OTP generation**
