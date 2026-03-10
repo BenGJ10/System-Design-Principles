@@ -8,6 +8,8 @@ This folder contains various designs and architectural patterns for building sca
 
 - [**2. SignUp Service Design**](Services/Design%20a%20SignUp%20System.md):  Design and architecture for a user sign-up service, including user data management and validation processes.
 
+- [**3. URL Shortener Design**](Services/Design%20a%20URL%20Shortener.md):  Design and architecture for a URL shortening service, including database schema and API endpoints.
+
 ---
 
 
