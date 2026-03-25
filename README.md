@@ -68,6 +68,18 @@ This repository contains comprehensive notes, diagrams, and resources on system 
   - [**Event-Driven Architecture**](Messaging%20and%20Processing/3.%20Event%20Driven%20Architecture.md)
 ---
 
+## [High Level Designs](High%20Level%20Designs/)
+
+| **Topic** | **Description** |
+|-----------|-----------------|
+| [**A Real World System Architecture**](High%20Level%20Designs/Services/A%20Real%20World%20System%20Architecture.md) | A comprehensive overview of a real-world system architecture, covering components, interactions, and design decisions. |
+| [**OTP Service Design**](High%20Level%20Designs/Services/Design%20a%20OTP%20Service.md) | A detailed design for an OTP service, including components, data flow, and scalability considerations. |
+| [**SignUp Service Design**](High%20Level%20Designs/Services/Design%20a%20SignUp%20System.md) | A comprehensive design for a user sign-up system covering user data management, validation, and security aspects. |
+| [**URL Shortener Design**](High%20Level%20Designs/Services/Design%20a%20URL%20Shortener.md) | An architectural design for a URL shortening service, including database schema, API design, and scalability strategies. |
+| [**Design Consistent Hashing**](High%20Level%20Designs/Services/Design%20Consistent%20Hashing.md) | An explanation of consistent hashing, its benefits, and how to implement it in distributed systems for load balancing and fault tolerance. |
+
+
+
 The notes are organized by topic and architecture type, with supporting diagrams for visual reference. Each section provides definitions, objectives, advantages, disadvantages, and practical considerations for system design.
 
 ## How to Use
