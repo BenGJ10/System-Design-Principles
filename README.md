@@ -77,7 +77,7 @@ This repository contains comprehensive notes, diagrams, and resources on system 
 | [**SignUp Service Design**](High%20Level%20Designs/Services/Design%20a%20SignUp%20System.md) | A comprehensive design for a user sign-up system covering user data management, validation, and security aspects. |
 | [**URL Shortener Design**](High%20Level%20Designs/Services/Design%20a%20URL%20Shortener.md) | An architectural design for a URL shortening service, including database schema, API design, and scalability strategies. |
 | [**Design Consistent Hashing**](High%20Level%20Designs/Services/Design%20Consistent%20Hashing.md) | An explanation of consistent hashing, its benefits, and how to implement it in distributed systems for load balancing and fault tolerance. |
-
+| [**Design a Unique ID Generator**](High%20Level%20Designs/Services/Design%20a%20Unique%20ID%20Generator.md) | A design for a unique ID generator service, covering algorithms, scalability, and fault tolerance. |
 
 
 The notes are organized by topic and architecture type, with supporting diagrams for visual reference. Each section provides definitions, objectives, advantages, disadvantages, and practical considerations for system design.

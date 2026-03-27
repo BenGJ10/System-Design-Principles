@@ -11,7 +11,7 @@ This folder contains various designs and architectural patterns for building sca
 | [**SignUp Service Design**](Services/Design%20a%20SignUp%20System.md) | A comprehensive design for a user sign-up system covering user data management, validation, and security aspects. |
 | [**URL Shortener Design**](Services/Design%20a%20URL%20Shortener.md) | An architectural design for a URL shortening service, including database schema, API design, and scalability strategies. |
 | [**Design Consistent Hashing**](Services/Design%20Consistent%20Hashing.md) | An explanation of consistent hashing, its benefits, and how to implement it in distributed systems for load balancing and fault tolerance. |
-
+| [**Design a Unique ID Generator**](Services/Design%20a%20Unique%20ID%20Generator.md) | A design for a unique ID generator service, covering algorithms, scalability, and fault tolerance. |
 ---
 
 
